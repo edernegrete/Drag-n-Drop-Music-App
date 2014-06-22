@@ -1,0 +1,12 @@
+$.ajax({
+      // data: {artist: artistInput.val()},
+      data: {
+        artist: nombre_cancion,
+        api_key: '42f75f939105d2110d6a0daf27db431c',
+        format: 'json',
+        method: 'artist.getinfo'
+      },
+      // url: '/res/data/lastfm.json'
+      url: 'http://ws.audioscrobbler.com/2.0/'
+    })
+    .done( CancionLOL );
