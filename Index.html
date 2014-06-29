@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>LOL</title>
   <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 <div class="recent margin_top">
-  <a href="#" class='recent_button' id="recent_drags">Recent Drags</a>
+  <a href="#" class='recent_button' id="recent_drags">Drag Anterior</a>
 </div>
 <div class="recent_drags text_center" id="recent_info">
 </div>
@@ -19,17 +21,16 @@
   <ul class="list">
     <a href="https://github.com/ederyair"><li>Github</li></a>
     <a href="https://twitter.com/ederyairr"><li>Twitter</li></a>
-    <a href="mailto:ederyairnglz@gmail.com" class="transition" id="email"><li>Mail</li></a>
-    <li class="mail">ederyairnglz@gmail.com</li>
+    <a href="mailto:ederyairnglz@gmail.com" id="email"><li>Mail</li></a>
+    <li class="mail" id="mail">ederyairnglz@gmail.com</li>
   </ul>
 </aside>
-<section class="letra text_center">
-  <h3>Letra</h3>
-  <article class="lyrics">
-    <h2 class="titulo"></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-     <p> Molestiae repellat consectetur itaque ipsam iure corrupti unde dolorum quia esse, </p>
-      <p>laudantium facere adipisci minima quasi exercitationem soluta deserunt ratione corporis neque! </p>
+<section class="vidletra text_center">
+  <h3>Video con Letra</h3>
+  <h2 class="titulo" id="titulo"></h2> 
+  <article class="vidlyrics" id="vidlyrics">
+    
+    
   </article>
 </section>
 
@@ -43,7 +44,7 @@
     </figcaption>
 </section>
 
-<section class="artist text_center">
+<section class="artist text_center" id="bio">
   <h3>Biografía</h3>
   <figure class="img_container center">
     <img src="images/artist.jpeg" alt="">
@@ -55,6 +56,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis distinctio optio impedit fugiat quasi excepturi facere quod incidunt enim perspiciatis illum dolores libero aliquam, saepe repellendus inventore consequuntur deleniti, maxime.</p>
   </article>
 </section>
+
+
 <script src="js/jquery.js"></script>
 <script src="js/app.js"></script>
 </body>

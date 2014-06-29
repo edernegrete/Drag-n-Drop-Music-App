@@ -3,9 +3,9 @@ a{color:#000;text-decoration:none}
 body{background:#ccc;font-family:Helvetica;font-size:16px}
 figure{width:70%}
 img{width:100%}
-.drop_section{background:#fff;border:1px dashed #008fd5;font-size:1.5em;margin-bottom:1em;margin-left:1.5em;margin-right:1.5em;padding:5em;position:relative}
-.dragover{border:4px dashed #fcd27f;font-size:2em}
-.recent_button{background:#dd4f24;box-shadow:1px 1px 10px #151515;color:#fff;padding:.5em;text-shadow:1px 1px 10px #151515;}
+.drop_section{background:#fff;border:1px dashed #008fd5;font-size:1.2em;margin-bottom:1em;margin-left:1.5em;margin-right:1.5em;padding:5em;position:relative}
+.dragover{border:4px dashed #fcd27f;font-size:1.4em}
+.recent_button{background:#dd4f24;box-shadow:1px 1px 10px #151515;color:#fff;margin-left:.5em;padding:.5em;text-shadow:1px 1px 10px #151515;}
 .recent_button:active{box-shadow:1px 1px 10px #151515 inset}
 .recent_drags{display:none;}
 .recent_drags .song{margin-right:1em;}
@@ -19,12 +19,12 @@ img{width:100%}
 .center{margin:0 auto}
 .margin_top{margin-top:1em}
 .text_center{text-align:center}
-.transition{transition:.5s all ease}
+.transition{transition:1s all ease}
 @media screen and (min-width:1000px){figure{width:50%}
 .artist .img_container{float:left}
 .album{margin-left:10em}
-.letra{width:47%;margin-left:1em}
-.letra,.album{display:inline-block;vertical-align:top}
+.vidletra{width:47%;margin-left:1em}
+.vidletra,.album{display:inline-block;vertical-align:top}
 .recent_drags .song{display:inline-block;}
 .recent_drags .song p{display:block;width:100%}
 .social{right:3em}
