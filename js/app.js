@@ -1,8 +1,11 @@
   var dropZone = document.getElementById('drop_section');
+     var template= '<div class="song" id="song">\
+                          <p>' +  localStorage['nombre_cancion'] +'</p>\
+                      </div>';
   //YouTube API variables
   var url = 'http://gdata.youtube.com/feeds/api/videos';
   var result = $('#vidlyrics');
-function start (template) {
+function start () {
   $('#recent_info').prepend(template);
 }
 function DragOver(evt) {
@@ -20,14 +23,9 @@ function FileSelect(evt) {
     }
       nombre_cancion =  nombre_cancion.replace (/.mp3/g, "");
       nombre_cancion =  nombre_cancion.replace (/.m4a/g, "");
-      var query = nombre_cancion;
-      var template= '<div class="song" id="song">\
-                          <figure class="img_recent margin_top">\
-                                 <img src="images/recent.jpg" alt="">\
-                          </figure> \
-                          <p>' + nombre_cancion+'</p>\
-                      </div>';
-    $('#titulo').prepend(nombre_cancion);
+      localStorage['nombre_cancion'] = nombre_cancion;
+      var query = nombre_cancion + '(lyrics)';
+    $('recent_drags').prepend(localStorage['nombre_cancion']);
     $('#drop_section').removeClass('dragover');
     start(template);
     submit(query);
@@ -74,7 +72,7 @@ function show () {
     };
     $('#mail').css(css)
 }
-
+//Listeners
 $(document).on('ready',start);
 $('#recent_drags').on('click', muestra);
 $('#email').on('click', show);
