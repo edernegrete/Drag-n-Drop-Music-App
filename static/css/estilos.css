@@ -1,0 +1,6 @@
+@import 'style.css';
+.Dropsection{border:2px dashed #008fd5;font-size:1.2em;margin:0 1.5em 1em 1.5em;padding:5em;text-align:center;}
+.Dropsection.is-animated{border:5px dashed #dd4f24}
+.btn{background:#dd4f24;box-shadow:1px 1px 10px #151515;color:#fff;margin-left:.5em;padding:.5em;text-shadow:1px 1px 10px #151515;}
+.btn:active{box-shadow:1px 1px 10px #151515 inset}
+.center{margin:0 auto}
